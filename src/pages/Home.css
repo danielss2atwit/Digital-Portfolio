@@ -1,0 +1,368 @@
+.section{
+display: flex;
+  align-items: center; /* Align image and text vertically */
+  gap: 40px; /* Space between image and text */
+  padding: 50px;
+}
+.profilePic{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+    border:3px solid pink;
+    box-shadow: 0 4px 12px gray;
+    
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.name{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:100px;
+    margin:0;
+}
+.title{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    margin:0;
+}
+.tagline{
+  font-size: 1.25rem;
+  margin-top: 20px;
+  background-color: #FFBCE4;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+  
+    
+}
+.project{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #D8FFCF;
+  width:100%;
+  height:70px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align:center;
+   
+
+}
+.projects-section {
+  text-align: center;
+  padding: 10px;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 500px;
+  margin: 30px 0;
+  flex-wrap: wrap; /* for responsive stacking */
+ 
+}
+
+.project-card {
+  background-color: #d1ffd1;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  
+}
+
+.project-image {
+  background-color: lightgray;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 100px;
+  font-family: serif;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: -90px;
+  margin-left: 120px;
+}
+
+.project-description {
+  margin-top: 65px;
+  font-size: 0.9rem;
+}
+
+.more-projects-btn {
+  background-color: #5ba35b;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.more-projects-btn:hover {
+  background-color: #376937;
+}
+.Job{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #CFEBF1;
+  width:100%;
+  height:70px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align:center;
+
+}
+.job-experience {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.job-card {
+  background-color: #d2edf4;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 8px;
+}
+
+.job-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.job-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.job-info h3 {
+  margin: 0;
+
+}
+.job-info p{
+  text-align:left;
+}
+
+.job-info .tagline {
+  margin: 5px 0 0;
+ 
+}
+
+.job-images {
+  display: flex;
+  gap: 15px;
+}
+
+.job-img {
+  width: 150px;
+  height: 150px;
+  background-color: #d6d6d6;
+}
+
+.view-more {
+  background-color: #93d4dc;
+  color: black;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+.club-section {
+  text-align: center;
+  margin: 40px auto;
+  
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.club-image {
+  background-color: #fffccf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 1.2rem;
+  border: 2px solid #b1ae26;
+  border-radius: 5px;
+}
+
+.club-image.small {
+  width: 150px;
+  height: 150px;
+}
+
+.club-image.large {
+  width: 200px;
+  height: 200px;
+}
+
+.club-description{
+  display: block;
+  background-color: #e3da7a;
+  padding: 10px 20px;
+  margin: 10px auto;
+  font-size: 15px !important;
+  cursor: pointer;
+  border-radius: 4px;
+  max-width:700px;
+
+}
+.club-view-more {
+  display: block;
+  background-color: #e3da7a;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px auto;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  color:black;
+}
+.club{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #FFFDD3;
+  width:100%;
+  height:70px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align:center;
+}
+.contact{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #dfb3e5;
+  width:100%;
+  height:70px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align:center;
+}
+.contact-section {
+  text-align: center;
+  margin: 60px auto;
+}
+
+.contact-button {
+  background-color: #b576c7; /* Purple tone */
+  color: black;
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #a060b1; /* Slightly darker on hover */
+}
+
+@media (max-width: 768px) {
+
+  /* Stack image and text vertically in intro section */
+  .section {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .profilePic {
+    width: 200px;
+    height: 200px;
+  }
+
+  .name {
+    font-size: 2.5rem; /* smaller than 100px */
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+
+  .projects-container {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-title {
+    margin: 10px 0 0;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .project-description {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .job-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .job-left {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .job-info p {
+    text-align: center;
+  }
+
+  .job-images {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .carousel {
+    flex-direction: column;
+  }
+
+  .club-image.small,
+  .club-image.large {
+    width: 120px;
+    height: 120px;
+  }
+
+  .contact-button {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+}
+
+

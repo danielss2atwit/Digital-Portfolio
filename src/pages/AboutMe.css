@@ -1,0 +1,49 @@
+.about-heading{
+    font-size:40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:center;
+}
+.about-description{
+    background-color:#ecce95;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2rem;
+    margin: 0 auto 2rem auto;
+    max-width: 80%;
+    border-radius: 8px;
+}
+.cards-container{
+    display:flex;
+    justify-content: space-evenly;
+    gap:1.5rem;
+    flex-wrap:wrap;
+}
+.card{
+    width:200px;
+    height:250px;
+    background-color:#d9d9d9;
+    border-radius:4px;
+    border:2px solid #ecce95;
+    box-shadow: 0 4px 12px gray;
+}
+
+@media (max-width: 768px) {
+  .about-heading {
+    font-size: 28px;
+    padding: 0 1rem;
+  }
+  .about-description {
+    max-width: 95%;
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .card {
+    width: 90vw; /* almost full width on mobile */
+    max-width: 300px;
+    height: auto; /* let height adjust based on content */
+  }
+}

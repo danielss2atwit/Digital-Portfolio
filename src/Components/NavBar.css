@@ -1,0 +1,67 @@
+.navbar{
+    background-color:#FFE6F5;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width:100%;
+    position:relative;
+    height:70px;
+    display:flex;
+    align-items:center;
+    padding: 0px 40px;
+    box-sizing: border-box;
+   
+}
+.navText{
+   text-decoration:none;
+   color:black;
+   font-weight:500;
+}
+.cursiveLogo{
+    font-family:'Brush Script MT', cursive;
+    font-size:24px;
+    color:black;
+    position:absolute;
+    left:40px;
+    
+}
+.navLinks{
+position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2rem;
+}
+.navText:hover{
+  background-color:#FFBCE4;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .cursiveLogo {
+    position: static;
+    font-size: 20px;
+    margin-bottom: 10px;
+    left: auto;
+    color: black;
+  }
+  
+  .navLinks {
+    position: static;
+    transform: none;
+    width: 100%;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .navText {
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
+}
