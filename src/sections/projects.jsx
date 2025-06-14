@@ -19,7 +19,7 @@ function projects(){
 
   <div class="projects-container">
     <div class="project-card">
-      <img src={ProjectLogo} alt='project logo' class="project-image"/>
+      <img src={ProjectLogo} loading="lazy" alt='project logo' class="project-image"/>
       <div class="project-title">Fuel My Stride</div>
       <p class="project-description">A mobile app designed to help runners fuel 
         properly for their training and gain insights into how their nutrition 
@@ -27,7 +27,7 @@ function projects(){
     </div>
 
     <div class="project-card">
-     <img src={ProjectScreen} alt='project screen' class="project-image" />
+     <img src={ProjectScreen} loading="lazy" alt='project screen' class="project-image" />
       <div class="project-title">Digital Portfolio</div>
       <p class="project-description">A website that showcases more about me,
         my projects, work experience and more!

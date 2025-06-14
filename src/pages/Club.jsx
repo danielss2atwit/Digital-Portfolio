@@ -8,28 +8,28 @@ import './Club.css';
 const clubData = [
   {
     image: SWE,
-    name: 'SWE',
+    name: 'Society of Women Engineers',
     position: 'President',
     time: 'Feb 2024 - Present',
     description:'Planned and hosted a large-scale hackathon with faculty judges and prizes',
   },
   {
     image: MDSS,
-     name: 'MDSS',
+     name: 'Math and Data Science Society',
     position: 'Secretary',
     time: 'May 2025 - Present',
     description: 'Organize club materials and run club social media accounts',
   },
   {
     image: Track,
-     name: 'XC-Track',
+     name: 'Cross Country/Track & Field',
     position: 'Team Member',
     time: 'August 2023 - Present',
     description: 'Participate in daily practice and compete at local and regional levels',
   },
   {
     image: SHPE,
-     name: 'SHPE',
+     name: 'Society of Hispanic Professional Engineers',
     position: 'Secretary',
     time: 'January 2024 - April 2025',
     description: 'Communicated with general body about events and meetings',
@@ -57,7 +57,7 @@ function Club(){
       <div className="carousel-container">
         <button className="arrow" onClick={handlePrev}>⟨</button>
         
-        <img src={image} alt="Club Involvement" className="carousel-image" />
+        <img src={image} loading="lazy" alt="Club Involvement" className="carousel-image" />
         
         <button className="arrow" onClick={handleNext}>⟩</button>
       </div>

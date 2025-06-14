@@ -15,9 +15,9 @@ const navigate = useNavigate();
   <h2 className="club">Club Involvement</h2>
 
   <div class="carousel">
-    <img src={SHPE} alt="SHPE" class="club-image small" />
-    <img src={SWE} alt="SWE" class="club-image large" />
-    <img src={MDSS} alt="MDSS" class="club-image small"/>
+    <img src={SHPE} loading="lazy" alt="SHPE" class="club-image small" />
+    <img src={SWE} loading="lazy" alt="SWE" class="club-image large" />
+    <img src={MDSS} loading="lazy" alt="MDSS" class="club-image small"/>
   </div>
 
   <p class="club-description">I joined these clubs to advance my leadership 

@@ -7,7 +7,7 @@ function Hero(){
     return(
         <>
         <div className="section">
-        <img src={ProfilePic} alt="profile picture" className="profilePic" />
+        <img src={ProfilePic} loading="lazy" alt="profile picture" className="profilePic" />
         <div className="container">
         <h1 className="name">Summer Daniels</h1>
         <h2 className="title">Computer Science Student</h2>

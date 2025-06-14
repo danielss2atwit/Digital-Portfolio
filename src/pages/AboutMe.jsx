@@ -26,10 +26,10 @@ function AboutMe(){
             
         </div>
         <div className="cards-container">
-            <img src={Pic1} alt="picture of me" className="card" />
-            <img src={Pic2} alt="picture of me" className="card" />
-            <img src={Pic3} alt="picture of me" className="card" />
-            <img src={Pic4} alt="picture of me" className="card" />
+            <img src={Pic1} loading="lazy" alt="picture of me" className="card" />
+            <img src={Pic2} loading="lazy" alt="picture of me" className="card" />
+            <img src={Pic3} loading="lazy" alt="picture of me" className="card" />
+            <img src={Pic4} loading="lazy" alt="picture of me" className="card" />
            
 
 

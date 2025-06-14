@@ -15,35 +15,35 @@ function experience(){
 
     return(
         <>
-       <section class="job-experience">
+       <section className="job-experience">
   <h2 className="Job">Job Experience</h2>
 
-  <div class="job-card">
-    <div class="job-left">
-      <img src={NBRRLogo} alt='NBRR Logo'class="job-logo" />
-      <div class="job-info">
+  <div className="job-card">
+    <div className="job-left">
+      <img src={NBRRLogo} alt='NBRR Logo'className="job-logo" />
+      <div className="job-info">
         <h3>New Bedford Research and Robotics</h3>
         <p>Engineering Intern</p>
       </div>
     </div>
-    <div class="job-images">
-      <img src={Fusion} alt="Fusion"class="job-img" />
-      <img src={CNC} alt="CNC"class="job-img" />
+    <div className="job-images">
+      <img src={Fusion} alt="Fusion"className="job-img" />
+      <img src={CNC} alt="CNC"className="job-img" />
       
     </div>
   </div>
 
-  <div class="job-card">
-    <div class="job-left">
-      <img src={CBCLogo} alt="CBC Logo"class="job-logo" />
-      <div class="job-info">
+  <div className="job-card">
+    <div className="job-left">
+      <img src={CBCLogo} alt="CBC Logo"className="job-logo" />
+      <div className="job-info">
         <h3>Community Boating Center</h3>
         <p>Head Instructor</p>
       </div>
     </div>
-    <div class="job-images">
-      <img src={CBC1} alt="CBC"class="job-img" />
-      <img src={CBC2} alt="CBC"class="job-img" />
+    <div className="job-images">
+      <img src={CBC1} loading="lazy" alt="CBC"className="job-img" />
+      <img src={CBC2} loading="lazy" alt="CBC"className="job-img" />
       
     </div>
   </div>

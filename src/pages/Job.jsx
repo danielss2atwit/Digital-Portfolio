@@ -19,6 +19,9 @@ import Admissions1 from '../assets/admissions1.jpg';
 import Admissions2 from '../assets/admissions2.jpg';
 import Sweet1 from '../assets/sweet1.jpg'
 import Sweet2 from '../assets/sweet2.jpg'
+import CampLogo from '../assets/camp.png'
+import Camp1 from '../assets/camp1.jpg'
+import Camp2 from '../assets/camp2.jpg'
 import React, { useState } from 'react';
 
 const jobsData = [
@@ -81,6 +84,18 @@ const jobsData = [
     ],
     placeholders:[Sweet1,Sweet2]
   },
+  {
+    logo: CampLogo,
+    title: 'West End House Girls Camp',
+    tagline: 'Head Counselor/ Archery Instructor',
+    time:'June 2022 - August 2023',
+    description: ['Responsible for 24 hour supervision of campers',
+        'Taught archery lessons to campers',
+        'Lead camp wide activites and special events'
+
+    ],
+    placeholders:[Camp1,Camp2]
+  },
 ];
 
 const educationData = [
@@ -100,7 +115,7 @@ function JobCard({ logo, title, tagline, placeholders,onClick }) {
   return (
     <div className="job-card" onClick = {onClick}>
       <div className="logo-circle">
-        <img src={logo} alt={`${title} logo`} className="logo-circle"/>
+        <img src={logo} loading="lazy" alt={`${title} logo`} className="logo-circle"/>
 
       </div>
       <div className="job-content">
@@ -110,7 +125,7 @@ function JobCard({ logo, title, tagline, placeholders,onClick }) {
       {placeholders && (
         <div className="placeholder-boxes">
           {placeholders.slice(0, 2).map((img, index) => (
-            <img key={index} src={img} alt={`Preview ${index + 1}`} className="placeholder" />
+            <img key={index} src={img} loading="lazy" alt={`Preview ${index + 1}`} className="placeholder" />
           ))}
         </div>
       )}
@@ -128,7 +143,7 @@ function JobModal({ job, onClose }) {
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-card" onClick={(e) => e.stopPropagation()}>
         <div className="logo-circle">
-          <img src={job.logo} alt={`${job.title} logo`} className="logo-circle"/>
+          <img src={job.logo} loading="lazy" alt={`${job.title} logo`} className="logo-circle"/>
         </div>
         <div className="job-content">
           <div className="job-title">{job.title}</div>
@@ -142,7 +157,7 @@ function JobModal({ job, onClose }) {
         </div>
         <div className="placeholder-boxes">
           {job.placeholders?.map((img, index) => (
-    <img key={index} src={img} alt={`Preview ${index + 1}`} className="placeholder" />
+    <img key={index} src={img} loading="lazy" alt={`Preview ${index + 1}`} className="placeholder" />
       
   ))}
   
@@ -157,7 +172,7 @@ function EducationCard({ logo,name,major,minor,gpa,gradDate,deansList,courses,on
   return (
     <div className="job-card" onClick={onClick}>
       <div className="logo-circle">
-      <img src={logo} alt={`${name} logo`} className="logo-circle"/>
+      <img src={logo} loading="lazy" alt={`${name} logo`} className="logo-circle"/>
 
       </div>
       <div className="job-content">
@@ -178,11 +193,12 @@ function EduModal({ edu, onClose }) {
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-card" onClick={(e) => e.stopPropagation()}>
         <div className="logo-circle">
-          <img src={edu.logo} alt={`${edu.title} logo`} className="logo-circle"/>
+          <img src={edu.logo} loading="lazy" alt={`${edu.title} logo`} className="logo-circle"/>
         </div>
         <div className="job-content">
           <div className="job-title">{edu.name}</div>
           <div>{edu.major}</div>
+          <div>{edu.minor}</div>
           <div>{edu.gpa}</div>
           <div>{edu.gradDate}</div>
           <div>{edu.deansList}</div>

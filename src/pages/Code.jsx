@@ -42,7 +42,7 @@ const projects = [
 
 const ProjectCard = ({ image,title, description, features, techStack, learned }) => (
   <div className="project-card1">
-    <img src={image} alt={`${title} screenshot`} className="image-placeholder1 border-highlight" />
+    <img src={image} loading="lazy" alt={`${title} screenshot`} className="image-placeholder1 border-highlight" />
     <h2 className="project-title1">{title}</h2>
     <p>{description}</p>
 
