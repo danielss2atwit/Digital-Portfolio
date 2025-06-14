@@ -15,7 +15,7 @@ This is my personal website and digital portfolio, built with React and Vite. It
 
 ## 📷 Preview
 
-![Website Screenshot](./public/project-screen.png)
+![Website Screenshot](https://github.com/danielss2atwit/Digital-Portfolio/blob/main/src/assets/project-screen.png?raw=true)
 
 🔗 **Live Site:** [https://www.summerdaniels.com](https://www.summerdaniels.com)
 
